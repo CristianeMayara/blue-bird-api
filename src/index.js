@@ -7,9 +7,9 @@ const app = express();
   useNewUrlParser: true
 });*/
 
-app.get('/', (req, res) => {
-  return res.send('Hello world');
-});
+mongoose.connect("mongodb://localhost:27017/goweek-backend");
+
+app.use(require('./routes'));
 
 app.listen(3000, () => {
   console.log('Server start on port 3000');
