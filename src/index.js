@@ -7,7 +7,9 @@ const app = express();
   useNewUrlParser: true
 });*/
 
-mongoose.connect("mongodb://localhost:27017/goweek-backend");
+mongoose.connect("mongodb://localhost:27017/goweek-backend",
+  { useNewUrlParser: true }
+);
 
 app.use(express.json());
 app.use(require('./routes'));
