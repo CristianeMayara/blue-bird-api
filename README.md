@@ -5,4 +5,5 @@
 - NodeJS
 - ExpressJS
 - Nodemon
+- Socket.IO
 - MongoDB
